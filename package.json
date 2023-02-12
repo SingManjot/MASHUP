@@ -1,0 +1,19 @@
+{
+  "name": "mashup-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Garvit Batra",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
