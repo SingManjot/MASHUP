@@ -23,6 +23,13 @@ app.post("/", (req, res) => {
     req.body.time,
     "output.mp3",
   ]);
+  python.stdout.on("data", (data) => {
+    console.log(`Python script output: ${data.toString()}`);
+  });
+
+  python.stderr.on("data", (data) => {
+    console.error(`Python script error: ${data.toString()}`);
+  });
   console.log("Python execution completed!");
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
